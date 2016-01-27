@@ -7,7 +7,7 @@ class CheckAddress {
      * @param  String $address BTC Address string
      * @return Boolean validation result
      */
-    public function validate($address, $currency_id, $addressversion) {
+    public function validate($address, $addressversion) {
         $addr = $this->decode_base58($address);
         if (strlen($addr) != 50) {
             return false;
